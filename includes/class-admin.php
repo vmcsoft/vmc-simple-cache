@@ -12,6 +12,8 @@ class Admin {
         $this->options = get_option('vmc_simple_cache_options', array(
             'cache_home' => false,
             'cache_blog' => false,
+            'cache_archive' => false,
+            'cache_page' => false,
             'debug_mode' => false,
             'cache_ttl' => 3600
         ));
@@ -84,6 +86,8 @@ class Admin {
         $options = array(
             'cache_home' => isset($_POST['cache_home']),
             'cache_blog' => isset($_POST['cache_blog']),
+            'cache_archive' => isset($_POST['cache_archive']),
+            'cache_page' => isset($_POST['cache_page']),
             'debug_mode' => isset($_POST['debug_mode']),
             'cache_ttl' => $ttl
         );
@@ -141,6 +145,26 @@ class Admin {
                                     Enable caching for the blog page
                                 </label>
                                 <p class="description">When enabled, the blog page (posts page) will be cached for non-logged-in users.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Archive Page Caching</th>
+                            <td>
+                                <label>
+                                    <input type="checkbox" name="cache_archive" value="1" <?php checked($this->options['cache_archive']); ?>>
+                                    Enable caching for archive pages
+                                </label>
+                                <p class="description">When enabled, category, tag, author, date, and custom taxonomy archives will be cached for non-logged-in users.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Page Caching</th>
+                            <td>
+                                <label>
+                                    <input type="checkbox" name="cache_page" value="1" <?php checked($this->options['cache_page']); ?>>
+                                    Enable caching for regular pages
+                                </label>
+                                <p class="description">When enabled, all WordPress pages (except the front page) will be cached for non-logged-in users.</p>
                             </td>
                         </tr>
                         <tr>

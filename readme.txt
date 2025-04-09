@@ -4,7 +4,7 @@ Tags: cache, performance, optimization, speed
 Requires at least: 5.0
 Tested up to: 6.4
 Requires PHP: 7.2
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 License: MIT
 License URI: https://opensource.org/licenses/MIT
 
@@ -18,6 +18,8 @@ VMC Simple Cache is a performance optimization plugin that caches your WordPress
 
 * File-based caching system
 * Cache front page, blog page, and individual posts
+* Cache archive pages (categories, tags, authors, dates, taxonomies)
+* Cache regular WordPress pages
 * Configurable cache TTL (Time To Live)
 * Debug mode for troubleshooting
 * Automatic cache clearing on post updates
@@ -33,6 +35,7 @@ VMC Simple Cache is a performance optimization plugin that caches your WordPress
 * Automatic cache management
 * Built-in debug tools
 * Secure by design
+* Comprehensive caching options
 
 == Installation ==
 
@@ -47,6 +50,8 @@ VMC Simple Cache is a performance optimization plugin that caches your WordPress
 No, the plugin works out of the box. However, you can configure:
 * Front page caching
 * Blog page caching
+* Archive page caching
+* Regular page caching
 * Cache TTL (Time To Live)
 * Debug mode
 
@@ -62,6 +67,20 @@ Yes, the cache directory is protected with .htaccess rules, and caching is autom
 
 While it can work alongside other caching plugins, we recommend using only one caching solution at a time to avoid conflicts.
 
+= What types of archive pages are cached? =
+
+When archive caching is enabled, the plugin caches:
+* Category archives
+* Tag archives
+* Author archives
+* Date archives (year, month, day)
+* Custom taxonomy archives
+* Custom post type archives
+
+= How does page caching work? =
+
+Page caching stores the HTML output of your WordPress pages. When a visitor requests a page, the cached version is served instead of generating the page from scratch. This significantly improves load times.
+
 == Screenshots ==
 
 1. Settings page showing cache configuration options
@@ -70,6 +89,13 @@ While it can work alongside other caching plugins, we recommend using only one c
 4. Cache status display
 
 == Changelog ==
+
+= 1.1.0 =
+* Added archive page caching (categories, tags, authors, dates, taxonomies)
+* Added regular page caching
+* Improved cache key generation
+* Enhanced cache clearing for related content
+* Updated documentation
 
 = 1.0.0 =
 * Initial release
@@ -81,6 +107,9 @@ While it can work alongside other caching plugins, we recommend using only one c
 * Cache management tools
 
 == Upgrade Notice ==
+
+= 1.1.0 =
+Added support for archive pages and regular pages caching. This version includes significant improvements to the caching system.
 
 = 1.0.0 =
 Initial release of VMC Simple Cache.

@@ -10,6 +10,8 @@ VMC Simple Cache is a performance optimization plugin that caches your WordPress
 
 - File-based caching system
 - Cache front page, blog page, and individual posts
+- Cache archive pages (categories, tags, authors, dates, taxonomies)
+- Cache regular WordPress pages
 - Configurable cache TTL (Time To Live)
 - Debug mode for troubleshooting
 - Automatic cache clearing on post updates
@@ -42,12 +44,22 @@ VMC Simple Cache is a performance optimization plugin that caches your WordPress
    - Enable/disable caching for the blog page
    - Useful for sites using a separate blog page
 
-3. **Cache TTL**
+3. **Archive Page Caching**
+   - Enable/disable caching for archive pages
+   - Caches category, tag, author, date, and taxonomy archives
+   - Improves performance for archive-heavy sites
+
+4. **Page Caching**
+   - Enable/disable caching for regular WordPress pages
+   - Excludes the front page (handled separately)
+   - Useful for static content pages
+
+5. **Cache TTL**
    - Set how long cached content should be valid
    - Range: 60 seconds to 24 hours (86400 seconds)
    - Default: 1 hour (3600 seconds)
 
-4. **Debug Mode**
+6. **Debug Mode**
    - Enable/disable debug information
    - Adds HTML comments with cache status
    - Useful for troubleshooting
@@ -57,6 +69,24 @@ VMC Simple Cache is a performance optimization plugin that caches your WordPress
 - Use the "Clear Cache" button to manually clear all cached content
 - Cache is automatically cleared when posts are updated
 - Cache is disabled for logged-in users
+
+## Changelog
+
+### 1.1.0
+- Added archive page caching (categories, tags, authors, dates, taxonomies)
+- Added regular page caching
+- Improved cache key generation
+- Enhanced cache clearing for related content
+- Updated documentation
+
+### 1.0.0
+- Initial release
+- File-based caching system
+- Front page and blog page caching
+- Configurable TTL
+- Debug mode
+- Admin interface
+- Cache management tools
 
 ## Support
 

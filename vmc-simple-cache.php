@@ -3,7 +3,7 @@
  * Plugin Name: VMC Simple Cache
  * Plugin URI: https://vmcsoft.com/plugins/vmc-simple-cache
  * Description: A lightweight, file-based caching solution for WordPress. Cache your front page, blog page, and individual posts with configurable TTL and debug mode.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: VMCSoft
  * Author URI: https://vmcsoft.com
  * License: MIT
@@ -23,7 +23,7 @@ if (!defined('WPINC')) {
 }
 
 // Define plugin constants
-define('VMC_SIMPLE_CACHE_VERSION', '1.0.0');
+define('VMC_SIMPLE_CACHE_VERSION', '1.1.0');
 define('VMC_SIMPLE_CACHE_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('VMC_SIMPLE_CACHE_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('VMC_SIMPLE_CACHE_CACHE_DIR', WP_CONTENT_DIR . '/cache/vmc-simple-cache');
