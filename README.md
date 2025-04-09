@@ -75,7 +75,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 
-This plugin is licensed under the GPL v2 or later.
+This plugin is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Credits
 

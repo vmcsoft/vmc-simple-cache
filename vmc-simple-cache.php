@@ -6,8 +6,8 @@
  * Version: 1.0.0
  * Author: VMCSoft
  * Author URI: https://vmcsoft.com
- * License: GPL v2 or later
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * License: MIT
+ * License URI: https://opensource.org/licenses/MIT
  * Text Domain: vmc-simple-cache
  * Domain Path: /languages
  * Requires at least: 5.0
